@@ -1,0 +1,5 @@
+module multiplier (input [15:0] A,B,output [15:0] w);
+	reg [31:0] temp;
+	assign temp=a*b;
+	assign w=temp[31:15];
+endmodule

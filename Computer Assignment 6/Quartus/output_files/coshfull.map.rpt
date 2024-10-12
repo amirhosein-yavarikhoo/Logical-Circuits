@@ -1,0 +1,702 @@
+Analysis & Synthesis report for coshfull
+Tue Jun 21 14:46:24 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Tue Jun 21 14:46:24 2022           ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; coshfull                                    ;
+; Top-level Entity Name              ; coshfull                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; coshfull           ; coshfull           ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Tue Jun 21 14:46:18 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off coshfull -c coshfull
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/amirh/downloads/university/digital systems 1/computer assignments/6/verilog/controller.v
+    Info (12023): Found entity 1: controller File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 2
+Info (12021): Found 2 design units, including 2 entities, in source file /users/amirh/downloads/university/digital systems 1/computer assignments/6/verilog/datapath.v
+    Info (12023): Found entity 1: coshcal File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 32
+    Info (12023): Found entity 2: hard_block File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 4164
+Info (12021): Found 1 design units, including 1 entities, in source file coshfull.bdf
+    Info (12023): Found entity 1: coshfull
+Info (12127): Elaborating entity "coshfull" for the top level hierarchy
+Info (12128): Elaborating entity "controller" for hierarchy "controller:inst"
+Warning (10235): Verilog HDL Always Construct warning at controller.v(30): variable "count" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 30
+Warning (10230): Verilog HDL assignment warning at controller.v(30): truncated value with size 32 to match size of target (4) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 30
+Warning (10235): Verilog HDL Always Construct warning at controller.v(43): variable "count" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 43
+Warning (10235): Verilog HDL Always Construct warning at controller.v(44): variable "count" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 44
+Warning (10230): Verilog HDL assignment warning at controller.v(44): truncated value with size 32 to match size of target (4) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 44
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "reset", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "nstate", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "count", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "ready", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "x2init0", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "x2init1", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "addinit0", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "addinit1", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "busy", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "xsel", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "x2sel", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "romsel", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "templn", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "tempsel", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "tempinit0", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "tempinit1", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "x2ln", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Warning (10240): Verilog HDL Always Construct warning at controller.v(7): inferring latch(es) for variable "addln", which holds its previous value in one or more paths through the always construct File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "addln" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "x2ln" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "tempinit1" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "tempinit0" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "tempsel" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "templn" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "romsel" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "x2sel" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "xsel" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "busy" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "addinit1" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "addinit0" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "x2init1" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "x2init0" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "ready" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "count[0]" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "count[1]" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "count[2]" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "count[3]" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "nstate.stateG" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "nstate.stateF" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "nstate.stateE" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "nstate.stateD" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "nstate.stateC" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "nstate.stateB" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "nstate.stateA" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "nstate.state0" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (10041): Inferred latch for "reset" at controller.v(7) File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v Line: 7
+Info (12128): Elaborating entity "coshcal" for hierarchy "coshcal:inst1"
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(130): object "unknown" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 130
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(139): object "multiplier|Mult0|auto_generated|mac_out2~dataout" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 139
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(140): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT1" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 140
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(141): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT2" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 141
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(142): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT3" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 142
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(143): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT4" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 143
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(144): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT5" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 144
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(145): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT6" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 145
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(146): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT7" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 146
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(147): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT8" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 147
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(148): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT9" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 148
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(149): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT10" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 149
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(150): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT11" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 150
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(151): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT12" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 151
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(152): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT13" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 152
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(153): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT14" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 153
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(154): object "multiplier|Mult0|auto_generated|mac_out2~DATAOUT31" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 154
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(155): object "multiplier|Mult0|auto_generated|mac_out2~0" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 155
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(156): object "multiplier|Mult0|auto_generated|mac_out2~1" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 156
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(157): object "multiplier|Mult0|auto_generated|mac_out2~2" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 157
+Warning (10036): Verilog HDL or VHDL warning at datapath.v(158): object "multiplier|Mult0|auto_generated|mac_out2~3" assigned a value but never read File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 158
+Error (12098): Design entity "coshcal" contains illegal names
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~0" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 787
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out[15]~1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 837
+    Error (12099): Name "inst3|dffeas:out[15]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 856
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[15]~15" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1073
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[0]~1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1110
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~0" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1147
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out[7]~1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1174
+    Error (12099): Name "x2reg|dffeas:out[0]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1193
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[0]~0" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1210
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|cycloneive_ram_block:ram_block1a0" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1281
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[0]~2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1319
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1336
+    Error (12099): Name "x2reg|dffeas:out[1]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1355
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[1]~3" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1372
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[1]~4" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1389
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~3" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1406
+    Error (12099): Name "x2reg|dffeas:out[2]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1425
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[2]~5" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1442
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[2]~6" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1459
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~4" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1476
+    Error (12099): Name "x2reg|dffeas:out[3]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1495
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[3]~7" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1512
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[3]~8" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1529
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~5" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1546
+    Error (12099): Name "x2reg|dffeas:out[4]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1565
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[4]~9" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1582
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[4]~10" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1599
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~6" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1616
+    Error (12099): Name "x2reg|dffeas:out[5]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1635
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[5]~11" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1652
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[5]~12" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1669
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~7" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1686
+    Error (12099): Name "x2reg|dffeas:out[6]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1705
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[6]~13" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1722
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[6]~14" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1739
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~8" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1756
+    Error (12099): Name "x2reg|dffeas:out[7]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1775
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[7]~15" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1792
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[7]~16" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1809
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~9" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1826
+    Error (12099): Name "x2reg|dffeas:out[8]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1845
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[8]~17" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1862
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[8]~18" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1879
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~10" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1896
+    Error (12099): Name "x2reg|dffeas:out[9]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1915
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[9]~19" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1932
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[9]~20" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1949
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~11" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1966
+    Error (12099): Name "x2reg|dffeas:out[10]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 1985
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[10]~21" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2002
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[10]~22" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2019
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~12" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2036
+    Error (12099): Name "x2reg|dffeas:out[11]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2055
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[11]~23" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2072
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[11]~24" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2089
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~13" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2106
+    Error (12099): Name "x2reg|dffeas:out[12]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2125
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[12]~25" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2142
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[12]~26" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2159
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~14" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2176
+    Error (12099): Name "x2reg|dffeas:out[13]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2195
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[13]~27" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2212
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[13]~28" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2229
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~15" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2246
+    Error (12099): Name "x2reg|dffeas:out[14]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2265
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[14]~29" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2282
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[14]~30" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2299
+    Error (12099): Name "x2reg|cycloneive_lcell_comb:out~16" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2316
+    Error (12099): Name "x2reg|dffeas:out[15]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2335
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[15]~31" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2352
+    Error (12099): Name "muxB|cycloneive_lcell_comb:out[15]~32" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2369
+    Error (12099): Name "multiplier|Mult0|auto_generated|cycloneive_mac_mult:mac_mult1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2388
+    Error (12099): Name "multiplier|Mult0|auto_generated|cycloneive_mac_out:mac_out2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2414
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2431
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out[11]~1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2458
+    Error (12099): Name "tempreg|dffeas:out[14]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2477
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[14]~14" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2494
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~3" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2511
+    Error (12099): Name "tempreg|dffeas:out[13]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2530
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[13]~13" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2547
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~4" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2564
+    Error (12099): Name "tempreg|dffeas:out[12]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2583
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[12]~12" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2600
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~5" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2617
+    Error (12099): Name "tempreg|dffeas:out[11]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2636
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[11]~11" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2653
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~6" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2670
+    Error (12099): Name "tempreg|dffeas:out[10]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2689
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[10]~10" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2706
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~7" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2723
+    Error (12099): Name "tempreg|dffeas:out[9]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2742
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[9]~9" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2759
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~8" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2776
+    Error (12099): Name "tempreg|dffeas:out[8]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2795
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[8]~8" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2812
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~9" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2829
+    Error (12099): Name "tempreg|dffeas:out[7]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2848
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[7]~7" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2865
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~10" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2882
+    Error (12099): Name "tempreg|dffeas:out[6]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2901
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[6]~6" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2918
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~11" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2935
+    Error (12099): Name "tempreg|dffeas:out[5]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2954
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[5]~5" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2971
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~12" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 2988
+    Error (12099): Name "tempreg|dffeas:out[4]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3007
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[4]~4" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3024
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~13" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3041
+    Error (12099): Name "tempreg|dffeas:out[3]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3060
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[3]~3" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3077
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~14" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3094
+    Error (12099): Name "tempreg|dffeas:out[2]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3113
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[2]~2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3130
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~15" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3147
+    Error (12099): Name "tempreg|dffeas:out[1]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3166
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[1]~1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3183
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~16" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3200
+    Error (12099): Name "tempreg|dffeas:out[0]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3219
+    Error (12099): Name "muxA|cycloneive_lcell_comb:out[0]~0" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3236
+    Error (12099): Name "tempreg|cycloneive_lcell_comb:out~0" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3253
+    Error (12099): Name "tempreg|dffeas:out[15]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3272
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[0]~0" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3290
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~16" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3307
+    Error (12099): Name "inst3|dffeas:out[0]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3326
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[1]~2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3346
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~15" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3363
+    Error (12099): Name "inst3|dffeas:out[1]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3382
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[2]~4" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3401
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~14" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3418
+    Error (12099): Name "inst3|dffeas:out[2]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3437
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[3]~6" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3457
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~13" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3474
+    Error (12099): Name "inst3|dffeas:out[3]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3493
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[4]~8" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3512
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~12" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3529
+    Error (12099): Name "inst3|dffeas:out[4]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3548
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[5]~10" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3568
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~11" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3585
+    Error (12099): Name "inst3|dffeas:out[5]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3604
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[6]~12" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3623
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~10" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3640
+    Error (12099): Name "inst3|dffeas:out[6]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3659
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[7]~14" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3679
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~9" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3696
+    Error (12099): Name "inst3|dffeas:out[7]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3715
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[8]~16" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3734
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~8" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3751
+    Error (12099): Name "inst3|dffeas:out[8]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3770
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[9]~18" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3790
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~7" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3807
+    Error (12099): Name "inst3|dffeas:out[9]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3826
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[10]~20" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3845
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~6" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3862
+    Error (12099): Name "inst3|dffeas:out[10]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3881
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[11]~22" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3902
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~5" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3919
+    Error (12099): Name "inst3|dffeas:out[11]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3938
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[12]~24" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3957
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~4" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3974
+    Error (12099): Name "inst3|dffeas:out[12]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 3993
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[13]~26" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 4014
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~3" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 4031
+    Error (12099): Name "inst3|dffeas:out[13]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 4050
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[14]~28" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 4069
+    Error (12099): Name "inst3|cycloneive_lcell_comb:out~2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 4086
+    Error (12099): Name "inst3|dffeas:out[14]" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 4105
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|cycloneive_lcell_comb:result[15]~30" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 4122
+    Error (12099): Name "inst3|out~0_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 181
+    Error (12099): Name "inst3|out[15]~1_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 185
+    Error (12099): Name "muxA|out[15]~15_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 206
+    Error (12099): Name "muxB|out[0]~1_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 209
+    Error (12099): Name "x2reg|out~0_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 212
+    Error (12099): Name "x2reg|out[7]~1_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 214
+    Error (12099): Name "muxB|out[0]~0_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 215
+    Error (12099): Name "muxB|out[0]~2_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 220
+    Error (12099): Name "x2reg|out~2_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 221
+    Error (12099): Name "muxB|out[1]~3_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 222
+    Error (12099): Name "muxB|out[1]~4_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 223
+    Error (12099): Name "x2reg|out~3_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 224
+    Error (12099): Name "muxB|out[2]~5_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 225
+    Error (12099): Name "muxB|out[2]~6_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 226
+    Error (12099): Name "x2reg|out~4_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 227
+    Error (12099): Name "muxB|out[3]~7_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 228
+    Error (12099): Name "muxB|out[3]~8_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 229
+    Error (12099): Name "x2reg|out~5_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 230
+    Error (12099): Name "muxB|out[4]~9_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 231
+    Error (12099): Name "muxB|out[4]~10_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 232
+    Error (12099): Name "x2reg|out~6_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 233
+    Error (12099): Name "muxB|out[5]~11_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 234
+    Error (12099): Name "muxB|out[5]~12_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 235
+    Error (12099): Name "x2reg|out~7_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 236
+    Error (12099): Name "muxB|out[6]~13_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 237
+    Error (12099): Name "muxB|out[6]~14_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 238
+    Error (12099): Name "x2reg|out~8_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 239
+    Error (12099): Name "muxB|out[7]~15_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 240
+    Error (12099): Name "muxB|out[7]~16_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 241
+    Error (12099): Name "x2reg|out~9_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 242
+    Error (12099): Name "muxB|out[8]~17_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 243
+    Error (12099): Name "muxB|out[8]~18_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 244
+    Error (12099): Name "x2reg|out~10_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 245
+    Error (12099): Name "muxB|out[9]~19_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 246
+    Error (12099): Name "muxB|out[9]~20_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 247
+    Error (12099): Name "x2reg|out~11_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 248
+    Error (12099): Name "muxB|out[10]~21_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 249
+    Error (12099): Name "muxB|out[10]~22_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 250
+    Error (12099): Name "x2reg|out~12_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 251
+    Error (12099): Name "muxB|out[11]~23_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 252
+    Error (12099): Name "muxB|out[11]~24_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 253
+    Error (12099): Name "x2reg|out~13_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 254
+    Error (12099): Name "muxB|out[12]~25_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 255
+    Error (12099): Name "muxB|out[12]~26_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 256
+    Error (12099): Name "x2reg|out~14_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 257
+    Error (12099): Name "muxB|out[13]~27_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 258
+    Error (12099): Name "muxB|out[13]~28_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 259
+    Error (12099): Name "x2reg|out~15_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 260
+    Error (12099): Name "muxB|out[14]~29_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 261
+    Error (12099): Name "muxB|out[14]~30_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 262
+    Error (12099): Name "x2reg|out~16_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 263
+    Error (12099): Name "muxB|out[15]~31_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 264
+    Error (12099): Name "muxB|out[15]~32_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 265
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT15" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 266
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT16" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 267
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT17" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 268
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT18" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 269
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT19" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 270
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT20" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 271
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT21" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 272
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT22" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 273
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT23" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 274
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT24" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 275
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT25" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 276
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT26" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 277
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT27" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 278
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT28" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 279
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT29" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 280
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT30" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 281
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT31" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 282
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~0" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 283
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 284
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 285
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~3" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 286
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT29" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 287
+    Error (12099): Name "tempreg|out~2_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 288
+    Error (12099): Name "tempreg|out[11]~1_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 290
+    Error (12099): Name "muxA|out[14]~14_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 291
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT14" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 292
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT28" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 293
+    Error (12099): Name "tempreg|out~3_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 294
+    Error (12099): Name "muxA|out[13]~13_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 295
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT13" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 296
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT27" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 297
+    Error (12099): Name "tempreg|out~4_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 298
+    Error (12099): Name "muxA|out[12]~12_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 299
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT12" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 300
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT26" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 301
+    Error (12099): Name "tempreg|out~5_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 302
+    Error (12099): Name "muxA|out[11]~11_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 303
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT11" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 304
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT25" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 305
+    Error (12099): Name "tempreg|out~6_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 306
+    Error (12099): Name "muxA|out[10]~10_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 307
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT10" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 308
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT24" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 309
+    Error (12099): Name "tempreg|out~7_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 310
+    Error (12099): Name "muxA|out[9]~9_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 311
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT9" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 312
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT23" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 313
+    Error (12099): Name "tempreg|out~8_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 314
+    Error (12099): Name "muxA|out[8]~8_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 315
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT8" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 316
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT22" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 317
+    Error (12099): Name "tempreg|out~9_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 318
+    Error (12099): Name "muxA|out[7]~7_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 319
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT7" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 320
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT21" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 321
+    Error (12099): Name "tempreg|out~10_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 322
+    Error (12099): Name "muxA|out[6]~6_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 323
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT6" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 324
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT20" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 325
+    Error (12099): Name "tempreg|out~11_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 326
+    Error (12099): Name "muxA|out[5]~5_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 327
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT5" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 328
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT19" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 329
+    Error (12099): Name "tempreg|out~12_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 330
+    Error (12099): Name "muxA|out[4]~4_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 331
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT4" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 332
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT18" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 333
+    Error (12099): Name "tempreg|out~13_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 334
+    Error (12099): Name "muxA|out[3]~3_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 335
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT3" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 336
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT17" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 337
+    Error (12099): Name "tempreg|out~14_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 338
+    Error (12099): Name "muxA|out[2]~2_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 339
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT2" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 340
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT16" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 341
+    Error (12099): Name "tempreg|out~15_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 342
+    Error (12099): Name "muxA|out[1]~1_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 343
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~DATAOUT1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 344
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT15" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 345
+    Error (12099): Name "tempreg|out~16_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 346
+    Error (12099): Name "muxA|out[0]~0_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 347
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_mult1~dataout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 348
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2~DATAOUT30" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 349
+    Error (12099): Name "tempreg|out~0_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 350
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[0]~0_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 351
+    Error (12099): Name "inst3|out~16_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 352
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[0]~1" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 353
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[1]~2_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 354
+    Error (12099): Name "inst3|out~15_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 355
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[1]~3" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 356
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[2]~4_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 357
+    Error (12099): Name "inst3|out~14_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 358
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[2]~5" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 359
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[3]~6_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 360
+    Error (12099): Name "inst3|out~13_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 361
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[3]~7" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 362
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[4]~8_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 363
+    Error (12099): Name "inst3|out~12_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 364
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[4]~9" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 365
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[5]~10_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 366
+    Error (12099): Name "inst3|out~11_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 367
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[5]~11" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 368
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[6]~12_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 369
+    Error (12099): Name "inst3|out~10_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 370
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[6]~13" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 371
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[7]~14_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 372
+    Error (12099): Name "inst3|out~9_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 373
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[7]~15" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 374
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[8]~16_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 375
+    Error (12099): Name "inst3|out~8_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 376
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[8]~17" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 377
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[9]~18_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 378
+    Error (12099): Name "inst3|out~7_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 379
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[9]~19" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 380
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[10]~20_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 381
+    Error (12099): Name "inst3|out~6_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 382
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[10]~21" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 383
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[11]~22_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 384
+    Error (12099): Name "inst3|out~5_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 385
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[11]~23" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 386
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[12]~24_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 387
+    Error (12099): Name "inst3|out~4_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 388
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[12]~25" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 389
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[13]~26_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 390
+    Error (12099): Name "inst3|out~3_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 391
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[13]~27" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 392
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[14]~28_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 393
+    Error (12099): Name "inst3|out~2_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 394
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[14]~29" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 395
+    Error (12099): Name "inst|LPM_ADD_SUB_component|auto_generated|result[15]~30_combout" File: C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/datapath.v Line: 396
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[15]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[14]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[13]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[12]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[11]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[10]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[9]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[8]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[7]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[6]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[5]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[4]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[3]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[2]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[1]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|q_a[0]"
+    Error (12099): Name "inst3|out[15]~ "
+    Error (12099): Name "inst3|out[14]~ "
+    Error (12099): Name "inst3|out[13]~ "
+    Error (12099): Name "inst3|out[12]~ "
+    Error (12099): Name "inst3|out[11]~ "
+    Error (12099): Name "inst3|out[10]~ "
+    Error (12099): Name "inst3|out[9]~ "
+    Error (12099): Name "inst3|out[8]~ "
+    Error (12099): Name "inst3|out[7]~ "
+    Error (12099): Name "inst3|out[6]~ "
+    Error (12099): Name "inst3|out[5]~ "
+    Error (12099): Name "inst3|out[4]~ "
+    Error (12099): Name "inst3|out[3]~ "
+    Error (12099): Name "inst3|out[2]~ "
+    Error (12099): Name "inst3|out[1]~ "
+    Error (12099): Name "inst3|out[0]~ "
+    Error (12099): Name "tempreg|out[15]~ "
+    Error (12099): Name "tempreg|out[14]~ "
+    Error (12099): Name "tempreg|out[13]~ "
+    Error (12099): Name "tempreg|out[12]~ "
+    Error (12099): Name "tempreg|out[11]~ "
+    Error (12099): Name "tempreg|out[10]~ "
+    Error (12099): Name "tempreg|out[9]~ "
+    Error (12099): Name "tempreg|out[8]~ "
+    Error (12099): Name "tempreg|out[7]~ "
+    Error (12099): Name "tempreg|out[6]~ "
+    Error (12099): Name "tempreg|out[5]~ "
+    Error (12099): Name "tempreg|out[4]~ "
+    Error (12099): Name "tempreg|out[3]~ "
+    Error (12099): Name "tempreg|out[2]~ "
+    Error (12099): Name "tempreg|out[1]~ "
+    Error (12099): Name "tempreg|out[0]~ "
+    Error (12099): Name "x2reg|out[15]~ "
+    Error (12099): Name "x2reg|out[14]~ "
+    Error (12099): Name "x2reg|out[13]~ "
+    Error (12099): Name "x2reg|out[12]~ "
+    Error (12099): Name "x2reg|out[11]~ "
+    Error (12099): Name "x2reg|out[10]~ "
+    Error (12099): Name "x2reg|out[9]~ "
+    Error (12099): Name "x2reg|out[8]~ "
+    Error (12099): Name "x2reg|out[7]~ "
+    Error (12099): Name "x2reg|out[6]~ "
+    Error (12099): Name "x2reg|out[5]~ "
+    Error (12099): Name "x2reg|out[4]~ "
+    Error (12099): Name "x2reg|out[3]~ "
+    Error (12099): Name "x2reg|out[2]~ "
+    Error (12099): Name "x2reg|out[1]~ "
+    Error (12099): Name "x2reg|out[0]~ "
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[35]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[18]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[17]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[16]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[15]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[14]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[13]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[12]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[11]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[10]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[9]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[8]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[7]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[6]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[5]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[4]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[3]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[2]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[1]"
+    Error (12099): Name "multiplier|Mult0|auto_generated|mac_out2_DATAOUT_bus[0]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus[17]"
+    Error (12099): Name "ROM|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus[16]"
+Error (12152): Can't elaborate user hierarchy "coshcal:inst1"
+Info (144001): Generated suppressed messages file C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/1.02/output_files/coshfull.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 438 errors, 45 warnings
+    Error: Peak virtual memory: 4709 megabytes
+    Error: Processing ended: Tue Jun 21 14:46:24 2022
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:15
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/1.02/output_files/coshfull.map.smsg.
+
+

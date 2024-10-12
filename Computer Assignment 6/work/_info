@@ -1,0 +1,247 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/1.00/mif
+vcalTB
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1655809841
+!i10b 1
+!s100 `fi[UQg=Tafafn4?Z3VOk0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IIlnERb5VcSS=Nz3:^k0G30
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog
+w1655809362
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/calTB.sv
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/calTB.sv
+!i122 184
+L0 2 15
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1655809841.000000
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/calTB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/calTB.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+ncal@t@b
+vcontroller
+R1
+!i10b 1
+!s100 :b^SiV93_I[C`G];=^CWT0
+R2
+I0Xj;mMI266bE152oHC^bm0
+R3
+R4
+w1655808353
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v
+!i122 180
+L0 2 50
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controller.v|
+!i113 1
+Z9 o-work work
+R8
+vcontrollerTB
+R0
+R1
+!i10b 1
+!s100 3RnA709@AN;^meJ?9_4To2
+R2
+IaHF[YPCIgT;MQ>OB^;NCT3
+R3
+S1
+R4
+w1655808370
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controllerTB.sv
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controllerTB.sv
+!i122 181
+L0 2 12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controllerTB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/controllerTB.sv|
+!i113 1
+R7
+R8
+ncontroller@t@b
+vcoshcal
+R1
+!i10b 1
+!s100 >nzkSZeFmSPfhGgK977YH2
+R2
+IkiQ=O0WjPEU3Se6TPo`k42
+R3
+R4
+Z10 w1655809592
+Z11 8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/1.01/simulation/modelsim/coshcal.vo
+Z12 FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/1.01/simulation/modelsim/coshcal.vo
+!i122 183
+L0 32 4135
+R5
+r1
+!s85 0
+31
+R6
+Z13 !s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/1.01/simulation/modelsim/coshcal.vo|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/1.01/simulation/modelsim/coshcal.vo|
+!i113 1
+R9
+R8
+vhard_block
+R1
+!i10b 1
+!s100 8WCR1KUAR5EL4HoMZKnM:1
+R2
+I[=:gB3XV[meWDn?jde5>[3
+R3
+R4
+R10
+R11
+R12
+!i122 183
+L0 4168 34
+R5
+r1
+!s85 0
+31
+R6
+R13
+R14
+!i113 1
+R9
+R8
+vmultiplier
+R1
+!i10b 1
+!s100 4U__T^XGc>8cPZL=HS91O2
+R2
+IQl21BY6dDWXg9o_;@ZOj41
+R3
+R4
+w1655625169
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/multiplier.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/multiplier.v
+!i122 176
+L0 1 5
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/multiplier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/multiplier.v|
+!i113 1
+R9
+R8
+vmux2to1
+R1
+!i10b 1
+!s100 gCO?fH85OiR9DOX8bg8el0
+R2
+ImKc1HF7>d28_mjEgHLAO>0
+R3
+R4
+w1655713190
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/mux2to1.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/mux2to1.v
+!i122 179
+Z15 L0 1 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/mux2to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/mux2to1.v|
+!i113 1
+R9
+R8
+vmux3to1
+R1
+!i10b 1
+!s100 BAH:oCcomS6Oib`[[ZXjL2
+R2
+IDCSCDC49>i`gMd6[Ic]<i3
+R3
+R4
+w1655712165
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/mux3to1.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/mux3to1.v
+!i122 178
+R15
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/mux3to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/mux3to1.v|
+!i113 1
+R9
+R8
+vregister
+R1
+!i10b 1
+!s100 HYI5U88LR6MMh<Bb1]:7b0
+R2
+IoJKDQZ]X3fk7HJNgW[NNX2
+R3
+R4
+w1655791130
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/register.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/register.v
+!i122 177
+L0 1 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/register.v|
+!i113 1
+R9
+R8
+vregisterx
+!s110 1655630374
+!i10b 1
+!s100 Xj`^FUU5U^2?RMiW1GUhJ3
+R2
+IL[@ONEhofBm_ToFYA8XD_1
+R3
+R4
+w1655630372
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/registerx.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/registerx.v
+!i122 7
+L0 1 7
+R5
+r1
+!s85 0
+31
+!s108 1655630374.000000
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/registerx.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/6/verilog/registerx.v|
+!i113 1
+R9
+R8
