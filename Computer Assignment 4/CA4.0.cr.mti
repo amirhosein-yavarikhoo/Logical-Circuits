@@ -1,0 +1,80 @@
+{C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always-TB.sv} {1 {vlog -work work -sv -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always-TB.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DffalwaysTB
+
+Top level modules:
+	DffalwaysTB
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1-TB.sv} {1 {vlog -work work -sv -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1-TB.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Q4TB
+
+Top level modules:
+	Q4TB
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff.v} {1 {vlog -work work -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Dff
+
+Top level modules:
+	Dff
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-Dff.v} {1 {vlog -work work -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-Dff.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux
+-- Compiling module msrr8dff
+
+Top level modules:
+	msrr8dff
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MSRR8-latch.v} {1 {vlog -work work -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MSRR8-latch.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux
+-- Compiling module msrr8latch
+
+Top level modules:
+	msrr8latch
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q4.v} {1 {vlog -work work -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q4.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module memoryrst
+
+Top level modules:
+	memoryrst
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always.v} {1 {vlog -work work -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Dffalways
+
+Top level modules:
+	Dffalways
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-LatchTB.sv} {1 {vlog -work work -sv -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-LatchTB.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Q6TB
+
+Top level modules:
+	Q6TB
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1.v} {1 {vlog -work work -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module memory1
+
+Top level modules:
+	memory1
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-TB.sv} {1 {vlog -work work -sv -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-TB.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DffTB
+
+Top level modules:
+	DffTB
+
+} {} {}} {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Msrr8-Dff-TB.sv} {1 {vlog -work work -sv -stats=none {C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Msrr8-Dff-TB.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Q8TB
+
+Top level modules:
+	Q8TB
+
+} {} {}}

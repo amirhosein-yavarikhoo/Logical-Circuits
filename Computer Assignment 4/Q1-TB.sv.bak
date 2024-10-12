@@ -1,0 +1,40 @@
+`timescale 1ns/1ns 
+module clock(output logic w);
+	 always
+    		#100 w = ~w;
+		initial 
+     		w = 1;
+endmodule
+
+module Q1TB();
+	reg dd,clkq1,QQ;
+	clock myclock(clkq1);
+	memory1 m1(.D(dd),.clk(clkq1),.Q(QQ));
+	initial begin
+	dd=1;
+	repeat (100) #30 dd=~dd;
+	end
+endmodule
+module Q4TB();
+	reg dd,clkq4,QQ4,rst;
+	//clock myclock4(clkq4);
+	memoryrst UUT(.D(dd),.clk(clkq4),.Q(QQ4),.rst(rst));
+	initial begin
+	rst=0;
+	clkq4=1;
+	dd=1;
+	#50 dd=~dd;
+	#50 clkq4=0;
+	dd=~dd;
+	#50 clkq4=1;
+	#50 rst=1;
+	#50 dd=0;
+	#50 dd=1;
+	#50 clkq4=0;
+	#50 clkq4=1;
+	#50 rst=0;
+	#100;
+	end
+endmodule
+
+	

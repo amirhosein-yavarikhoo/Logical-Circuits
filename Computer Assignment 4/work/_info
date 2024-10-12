@@ -1,0 +1,355 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/amirh/Downloads/university/Digital Systems 1
+vclock
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1653727967
+!i10b 1
+!s100 Yj6D_OHVef@DdGR;E=AgK0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1`2YPH>L6NEJR<fN:]K970
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z3 dC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0
+w1653727965
+Z4 8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-LatchTB.sv
+Z5 FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-LatchTB.sv
+!i122 181
+Z6 L0 2 6
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1653727967.000000
+Z8 !s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-LatchTB.sv|
+Z9 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-LatchTB.sv|
+!i113 1
+Z10 o-work work -sv
+Z11 tCvgOpt 0
+vDff
+Z12 !s110 1653825567
+!i10b 1
+!s100 n:=NH]8nQg[FIDD0[CM<00
+R1
+Ie^L4_O8Gi8CLX;6acVH6b3
+R2
+R3
+w1653740272
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff.v
+!i122 501
+L0 2 7
+R7
+r1
+!s85 0
+31
+Z13 !s108 1653825567.000000
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff.v|
+!i113 1
+Z14 o-work work
+R11
+n@dff
+vDffalways
+R12
+!i10b 1
+!s100 I13Tf529mI;Oz4811d@n83
+R1
+II60EjUH>6KN6fmQVblKYR0
+R2
+R3
+w1653821797
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always.v
+!i122 505
+R6
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always.v|
+!i113 1
+R14
+R11
+n@dffalways
+vDffalwaysTB
+R0
+R12
+!i10b 1
+!s100 H6>LR]3A^7d4XI5FaiaIP0
+R1
+IoC849hORV:FW<z<iSb;353
+R2
+S1
+R3
+w1653821898
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always-TB.sv
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always-TB.sv
+!i122 506
+Z15 L0 2 14
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always-TB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-always-TB.sv|
+!i113 1
+R10
+R11
+n@dffalways@t@b
+vDffTB
+R0
+R12
+!i10b 1
+!s100 OaRi6m;2];KK<JlJf@Dzb1
+R1
+INdVCcz[P6@4>;@^oAUEhI3
+R2
+S1
+R3
+w1653739522
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-TB.sv
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-TB.sv
+!i122 502
+R15
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-TB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Dff-TB.sv|
+!i113 1
+R10
+R11
+n@dff@t@b
+vmemory1
+!s110 1653825566
+!i10b 1
+!s100 zdkGZR[V?g@HPNmaI2czi0
+R1
+Ikk:o`j5^L_V0o`e3A]CFl2
+R2
+R3
+w1653459260
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1.v
+!i122 496
+L0 2 4
+R7
+r1
+!s85 0
+31
+Z16 !s108 1653825566.000000
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1.v|
+!i113 1
+R14
+R11
+vmemoryrst
+R12
+!i10b 1
+!s100 SX2^PRBOkD87U`[cCY3RL1
+R1
+I8`U4CKz8m6WM:WP4odQWB0
+R2
+R3
+w1653566817
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q4.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q4.v
+!i122 498
+L0 2 5
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q4.v|
+!i113 1
+R14
+R11
+vmsrr8dff
+R12
+!i10b 1
+!s100 M`LzUMbWiGOXRSZeR7N@20
+R1
+I^^SI0?`8B05:;:czoz26;2
+R2
+R3
+Z17 w1653825563
+Z18 8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-Dff.v
+Z19 FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-Dff.v
+!i122 503
+L0 5 16
+R7
+r1
+!s85 0
+31
+R13
+Z20 !s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-Dff.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MsRR8-Dff.v|
+!i113 1
+R14
+R11
+vmsrr8latch
+R12
+!i10b 1
+!s100 aD:^_h3:XH:A<R=JO@FEl2
+R1
+ImKRD>JR=YmR5K<:^87aa[3
+R2
+R3
+w1653818215
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MSRR8-latch.v
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MSRR8-latch.v
+!i122 499
+L0 5 19
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MSRR8-latch.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/MSRR8-latch.v|
+!i113 1
+R14
+R11
+vmux
+R12
+!i10b 1
+!s100 50<VINa@mzXVS=EadE:SN1
+R1
+I98R211hkOa>RJo7NaT`7S2
+R2
+R3
+R17
+R18
+R19
+!i122 503
+L0 2 3
+R7
+r1
+!s85 0
+31
+R13
+R20
+R21
+!i113 1
+R14
+R11
+vQ1TB
+R0
+!s110 1653567170
+!i10b 1
+!s100 `?^VHZgaH;WPWQKI?nL732
+R1
+IBiK`8;BGQ^aTVc[lOK7n;3
+R2
+S1
+R3
+w1653567168
+Z22 8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1-TB.sv
+Z23 FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1-TB.sv
+!i122 92
+L0 9 9
+R7
+r1
+!s85 0
+31
+!s108 1653567170.000000
+Z24 !s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1-TB.sv|
+Z25 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Q1-TB.sv|
+!i113 1
+R10
+R11
+n@q1@t@b
+vQ4TB
+R0
+R12
+!i10b 1
+!s100 ]lWXZFRdfE1ZTl;R@OAdY1
+R1
+ISYLV_T;e84z7:D58l?kN]3
+R2
+S1
+R3
+w1653567212
+R22
+R23
+!i122 497
+L0 18 21
+R7
+r1
+!s85 0
+31
+R16
+R24
+R25
+!i113 1
+R10
+R11
+n@q4@t@b
+vQ6TB
+R0
+R12
+!i10b 1
+!s100 NTYHbJ5H7:2O]LKoRYkfH1
+R1
+IYk:0e2eKfiC_<KGjD`N<S0
+R2
+S1
+R3
+w1653820149
+R4
+R5
+!i122 500
+L0 2 24
+R7
+r1
+!s85 0
+31
+R13
+R8
+R9
+!i113 1
+R10
+R11
+n@q6@t@b
+vQ8TB
+R0
+R12
+!i10b 1
+!s100 @LNozhfhVOV=^U7MnzXWd3
+R1
+I[P84=Q_9d0<LdikS<gknG3
+R2
+S1
+R3
+w1653821290
+8C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Msrr8-Dff-TB.sv
+FC:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Msrr8-Dff-TB.sv
+!i122 504
+L0 2 20
+R7
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Msrr8-Dff-TB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/amirh/Downloads/university/Digital Systems 1/Computer assignments/4/CA4.0/Msrr8-Dff-TB.sv|
+!i113 1
+R10
+R11
+n@q8@t@b
